@@ -13,6 +13,7 @@
 		1BCD5D871C2828C300D9B0C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCD5D851C2828C300D9B0C7 /* Main.storyboard */; };
 		1BCD5D891C2828C300D9B0C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BCD5D881C2828C300D9B0C7 /* Assets.xcassets */; };
 		1BCD5D8C1C2828C300D9B0C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCD5D8A1C2828C300D9B0C7 /* LaunchScreen.storyboard */; };
+		37AC95E7C504F8180D56498F /* libPods-JFBlocksKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0677FEAA1CE0369CDF624DA /* libPods-JFBlocksKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,10 @@
 		1BCD5D881C2828C300D9B0C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BCD5D8B1C2828C300D9B0C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BCD5D8D1C2828C300D9B0C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BCD5D931C282A2B00D9B0C7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		32A75B5F0BFB173EAC436C93 /* Pods-JFBlocksKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFBlocksKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFBlocksKit/Pods-JFBlocksKit.debug.xcconfig"; sourceTree = "<group>"; };
+		E35467D6C608ED7A33C8B4FA /* Pods-JFBlocksKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFBlocksKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFBlocksKit/Pods-JFBlocksKit.release.xcconfig"; sourceTree = "<group>"; };
+		F0677FEAA1CE0369CDF624DA /* libPods-JFBlocksKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JFBlocksKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +38,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37AC95E7C504F8180D56498F /* libPods-JFBlocksKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B56FDB09AC97C2AAFAED3AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32A75B5F0BFB173EAC436C93 /* Pods-JFBlocksKit.debug.xcconfig */,
+				E35467D6C608ED7A33C8B4FA /* Pods-JFBlocksKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1BCD5D701C2828C300D9B0C7 = {
 			isa = PBXGroup;
 			children = (
 				1BCD5D7B1C2828C300D9B0C7 /* JFBlocksKit */,
 				1BCD5D7A1C2828C300D9B0C7 /* Products */,
+				0B56FDB09AC97C2AAFAED3AC /* Pods */,
+				AD6FB912D89C5D09D3DDC84C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,7 @@
 				1BCD5D8A1C2828C300D9B0C7 /* LaunchScreen.storyboard */,
 				1BCD5D8D1C2828C300D9B0C7 /* Info.plist */,
 				1BCD5D7C1C2828C300D9B0C7 /* Supporting Files */,
+				1BCD5D931C282A2B00D9B0C7 /* PrefixHeader.pch */,
 			);
 			path = JFBlocksKit;
 			sourceTree = "<group>";
@@ -79,6 +97,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AD6FB912D89C5D09D3DDC84C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0677FEAA1CE0369CDF624DA /* libPods-JFBlocksKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BCD5D901C2828C300D9B0C7 /* Build configuration list for PBXNativeTarget "JFBlocksKit" */;
 			buildPhases = (
+				36CCF98F784C703648C4D112 /* Check Pods Manifest.lock */,
 				1BCD5D751C2828C300D9B0C7 /* Sources */,
 				1BCD5D761C2828C300D9B0C7 /* Frameworks */,
 				1BCD5D771C2828C300D9B0C7 /* Resources */,
+				81F09377EBF6C5E79DDBFB96 /* Embed Pods Frameworks */,
+				99E310107DB77C289046693B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +173,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36CCF98F784C703648C4D112 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		81F09377EBF6C5E79DDBFB96 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFBlocksKit/Pods-JFBlocksKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99E310107DB77C289046693B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFBlocksKit/Pods-JFBlocksKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1BCD5D751C2828C300D9B0C7 /* Sources */ = {
@@ -260,8 +337,10 @@
 		};
 		1BCD5D911C2828C300D9B0C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32A75B5F0BFB173EAC436C93 /* Pods-JFBlocksKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = JFBlocksKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.john.JFBlocksKit;
@@ -271,8 +350,10 @@
 		};
 		1BCD5D921C2828C300D9B0C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E35467D6C608ED7A33C8B4FA /* Pods-JFBlocksKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = JFBlocksKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.john.JFBlocksKit;
@@ -299,6 +380,7 @@
 				1BCD5D921C2828C300D9B0C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

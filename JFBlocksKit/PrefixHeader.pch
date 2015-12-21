@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  JFBlocksKit
+//
+//  Created by JohnFighting on 15/12/21.
+//  Copyright © 2015年 john. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Masonry.h>
+/** 改写NS开头的类的target+selector或 委托模式 */
+#import <BlocksKit.h>
+/** 改写UI开头的类的target+selector或 委托模式 */
+#import <BlocksKit+UIKit.h>
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
